@@ -15,6 +15,10 @@ author = "agent"
 task = "workflow.run"
 args = "Run Kindle to Anki Converter"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Run Kindle to Anki GUI"
+
 [[workflows.workflow]]
 name = "Run Kindle to Anki Converter"
 author = "agent"
@@ -25,6 +29,17 @@ agentRequireRestartOnSave = false
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "python kindle_to_anki.py example_input.txt output.apkg \"My Kindle Highlights\""
+
+[[workflows.workflow]]
+name = "Run Kindle to Anki GUI"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python kindle_to_anki.py"
 
 [deployment]
 run = ["sh", "-c", "python kindle_to_anki.py example_input.txt output.apkg \"My Kindle Highlights\""]

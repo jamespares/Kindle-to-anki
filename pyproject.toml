@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 genanki = "^0.13.1"
+tk = "^0.1.0"
 
 
 [build-system]
