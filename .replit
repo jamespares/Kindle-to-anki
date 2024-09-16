@@ -1,0 +1,30 @@
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Run Kindle to Anki Converter"
+
+[[workflows.workflow]]
+name = "Run Kindle to Anki Converter"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python kindle_to_anki.py example_input.txt output.apkg \"My Kindle Highlights\""
+
+[deployment]
+run = ["sh", "-c", "python kindle_to_anki.py example_input.txt output.apkg \"My Kindle Highlights\""]

@@ -1,0 +1,14 @@
+The Pragmatic Programmer (David Thomas)
+- Your Highlight on page 12 | Location 123-125 | Added on Monday, June 1, 2020 11:30:21 AM
+
+Good programmers use their brains, but good habits save using their brains for the really big issues.
+
+Clean Code (Robert C. Martin)
+- Your Highlight on page 34 | Location 567-569 | Added on Tuesday, July 14, 2020 3:45:12 PM
+
+The ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code.
+
+Deep Work (Cal Newport)
+- Your Highlight on page 56 | Location 890-892 | Added on Wednesday, August 5, 2020 9:15:37 AM
+
+The ability to perform deep work is becoming increasingly rare at exactly the same time it is becoming increasingly valuable in our economy. As a consequence, the few who cultivate this skill, and then make it the core of their working life, will thrive.
